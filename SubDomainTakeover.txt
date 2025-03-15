@@ -1,0 +1,9 @@
+##This files contains commands to perform domain takeover
+1) get live subdomains
+subfinder -d example.com | dnsx -o subs.txt
+
+2) using nuclei to scan for targets
+nuclei -l subs.txt -t /Users/anuraggoel/nuclei-templates/takeovers/
+
+###this is a work in progress
+### I need to figure out next steps after using nuclei
